@@ -2,7 +2,6 @@ using d1123.Repository;
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddScoped<Repository>();
 builder.Services.AddCors();
 
 var app = builder.Build();
