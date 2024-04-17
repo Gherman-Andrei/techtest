@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
 
@@ -9,12 +8,11 @@ using d1123.DTO;
 
 
 namespace d1123.Controllers;
-
 [Route("api/[controller]")]
 [ApiController]
 public class OtpController : Controller
 {
-    private readonly Repository.Repository _repository;
+     private Repository.Repository _repository;
     private static readonly TimeSpan CacheTimeout = TimeSpan.FromSeconds(30);
 
     public OtpController(Repository.Repository test)
@@ -33,7 +31,8 @@ public class OtpController : Controller
         string otp = totp.ComputeTotp(DateTime.UtcNow);
 
         StoreOtp(request.Username, otp, currentTime);
-        Console.WriteLine("salut");
+        
+        
         return Ok(new { otp = otp });
     }
 
@@ -49,22 +48,20 @@ public class OtpController : Controller
     }
     private void StoreOtp(string username, string otp, long generationTimestamp)
     {
-      _repository.AddUsername(username,otp);
+        long expiryTimestamp = generationTimestamp + (long)CacheTimeout.TotalMilliseconds;
+        _repository.AddUsername(username, otp);
     }
     
     [HttpPost("verify")]
     public IActionResult VerifyOtp([FromBody] VerifyOtpRequest request) {
         string username = request.Username;
         string providedOtp = request.Otp;
-
-        // Check if the username exists in the cache
         string cachedOtp = _repository.GetOtp(username);
+        Console.WriteLine(cachedOtp);
         if (string.IsNullOrEmpty(cachedOtp))
         {
             return BadRequest("Invalid username or OTP not generated yet.");
         }
-
-        // Validate the provided OTP against the cached OTP
         if (!ValidateOtp(providedOtp, cachedOtp))
         {
             return Unauthorized("Invalid OTP.");

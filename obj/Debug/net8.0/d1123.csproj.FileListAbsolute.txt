@@ -27,3 +27,8 @@ C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\d1123.pdb
 C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\d1123.genruntimeconfig.cache
 C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\ref\d1123.dll
 C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\d1123.sourcelink.json
+C:\Users\Mona\RiderProjects\d1123\d1123\bin\Debug\net8.0\front\my-app\build\asset-manifest.json
+C:\Users\Mona\RiderProjects\d1123\d1123\bin\Debug\net8.0\front\my-app\build\manifest.json
+C:\Users\Mona\RiderProjects\d1123\d1123\bin\Debug\net8.0\front\my-app\package-lock.json
+C:\Users\Mona\RiderProjects\d1123\d1123\bin\Debug\net8.0\front\my-app\package.json
+C:\Users\Mona\RiderProjects\d1123\d1123\bin\Debug\net8.0\front\my-app\public\manifest.json
