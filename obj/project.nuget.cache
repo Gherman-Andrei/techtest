@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qSkfsgS2j7+SLSDrA/2WbmLUKwB9Pv7ZxQIzPCTs8Ub0Go1zlDPqFT2U69IWhRxnWBoXc2PXzJHbb4+TXuxtIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mona\\RiderProjects\\d1123\\d1123\\d1123.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mona\\.nuget\\packages\\otp.net\\1.4.0\\otp.net.1.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+POST http://localhost:5077/api/Otp/generate
+Content-Type: application/json
+
+{
+  "username": "andrei"
+}
+###
+POST http://localhost:5077/api/VerifyOtp/verify
+Content-Type: application/json
+
+{
+  "Username": "andrei",
+  "Otp": "474808"
+}
