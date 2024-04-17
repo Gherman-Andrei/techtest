@@ -26,3 +26,4 @@ C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\refint\d1123.dll
 C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\d1123.pdb
 C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\d1123.genruntimeconfig.cache
 C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\ref\d1123.dll
+C:\Users\Mona\RiderProjects\d1123\d1123\obj\Debug\net8.0\d1123.sourcelink.json

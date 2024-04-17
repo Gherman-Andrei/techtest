@@ -5,10 +5,11 @@ Content-Type: application/json
   "username": "andrei"
 }
 ###
-POST http://localhost:5077/api/VerifyOtp/verify
+POST http://localhost:5077/api/Otp/verify
 Content-Type: application/json
 
 {
-  "Username": "andrei",
-  "Otp": "474808"
+  "username": "andrei",
+  "otp": "901987"
 }
+###

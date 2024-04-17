@@ -1,10 +1,11 @@
 using d1123.Controllers;
+using d1123.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<OtpController>();
 builder.Services.AddControllers();
+builder.Services.AddScoped<Repository>();
 
 var app = builder.Build();
 
