@@ -46,8 +46,7 @@ function App() {
       });
 
       const result = await response.json();
-
-      if (response.ok && result.message === 'OTP verified successfully.') {
+      if (result.message === 'OTP verified successfully.') {
         console.log('Login successful!');
         setToastMessage('Login successful!');
       } else {
